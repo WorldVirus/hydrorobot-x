@@ -1,0 +1,32 @@
+.border_blocks{
+    border: 1px solid;
+}
+.btn-primary{
+    background-color: #131415;
+    border-color: #131415;
+}
+.btn-primary:hover{
+    background-color: #131415;
+    border-radius: 20px;
+}
+.news{
+    background-color: #131415;
+    margin-top: 0em;
+    color: #ffffff;
+}
+
+.tester {
+   margin-top: 23em;
+}
+.text_info{
+    padding-left: 13px;
+}
+.stretch_news{
+    padding-top: 13.7em;
+}
+.stretch_info {
+    padding-top: 9em;
+}
+.btn_scretch {
+    padding-top: 2em;
+}

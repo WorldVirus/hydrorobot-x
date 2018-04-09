@@ -1,0 +1,14 @@
+    {/*// <div className="row">*/}
+            {/*//   <div className="center-block">*/}
+            {/*//     <div className="test">*/}
+            {/*//         <img src = {equipment} className="pull-right img-responsive " />*/}
+            {/*//         <img src = {engine} className="pull-right img-responsive " />*/}
+            {/*//         <img src = {manipulator} className="pull-right img-responsive " />*/}
+            {/*//         <img src = {robot} className="pull-right img-responsive " />*/}
+            //     {/*<img src = {logo} className="img-responsive center-block" />*/}
+            {/*//           /!*<img src = {logo} className="pull-left img-responsive " />*!/*/}
+            {/*//     </div>*/}
+            {/*//*/}
+            {/*//   </div>*/}
+            {/*//*/}
+            {/*// </div>*/}

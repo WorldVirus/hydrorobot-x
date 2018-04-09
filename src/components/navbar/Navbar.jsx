@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import Grid  from 'react-bootstrap/lib/Grid';
 import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import NavItem  from 'react-bootstrap/lib/NavItem';
 import "../bootstrap.css";
 import "./nav.css"
 
-
-// const brandMean = {
-// fontsize = 1em
-// };
-
 class Navv extends Component {
     render() {
         return (
-            <div>
+            <div className="navv_and_another">
+            <div className="navbar_row">
                 <Navbar>
                     <Navbar.Header>
                         <Navbar.Brand>
@@ -29,12 +24,12 @@ class Navv extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse style = {{ marginTop: "6em",}}>
                         <Nav navbar>
-                            <NavItem >Главная</NavItem>
-                            <NavItem>О компании</NavItem>
+                            <NavItem href = "/">Главная</NavItem>
+                            <NavItem href = "about">О компании</NavItem>
                             <NavItem>Продукты</NavItem>
                             <NavItem>Аренда</NavItem>
                             <NavItem>Услуги</NavItem>
-                            <NavItem>Техподдержка</NavItem>
+                            <NavItem href = "support">Техподдержка</NavItem>
                             <NavItem>Новости</NavItem>
                             <NavItem>Контакты</NavItem>
                         </Nav>
@@ -51,8 +46,11 @@ class Navv extends Component {
                         </div>
                     </form>
                 </Navbar>
-
             </div>
+            <div className = "robots">
+                {this.props.children}
+            </div>
+        </div>
         );
     }
 }

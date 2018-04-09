@@ -20,8 +20,9 @@ function renderHTML(componentHTML) {
       <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
- <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon">
           <title>Hydrobot-X</title>
           
           <link rel="stylesheet" href="${assetUrl}/build/assets/styles.css">
