@@ -7,7 +7,7 @@ class About extends Component {
         return (
             <div className="tech_scretch">
                 <div className ="text-center">
-                    <h1>О компании </h1>
+                    <h1 >О компании </h1>
                 </div>
                 <div className = "screach_support"></div>
                 <div className="container">

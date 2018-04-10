@@ -21,7 +21,7 @@ class Information extends Component {
                      </div>
                     <div className="stretch_info">
                       <div className="row text-center">
-                         <button className="btn btn-primary" type="submit">Подробнее</button>
+                         <button className="btn btn-primary" type="submit" >Подробнее</button>
                        </div>
                         <div className="btn_scretch">
                         </div>
