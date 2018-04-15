@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import NavItem  from 'react-bootstrap/lib/NavItem';
+
 import "../bootstrap.css";
 import "./nav.css"
 
@@ -24,14 +25,14 @@ class Navv extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse style = {{ marginTop: "6em",}}>
                         <Nav navbar>
-                            <NavItem href = "/">Главная |</NavItem>
-                            <NavItem href = "about">О компании |</NavItem>
-                            <NavItem href = "products">Продукты |</NavItem>
-                            <NavItem href = "lease">Аренда |</NavItem>
-                            <NavItem href = "services">Услуги |</NavItem>
-                            <NavItem href = "support">Техподдержка |</NavItem>
-                            <NavItem href = "news">Новости |</NavItem>
-                            <NavItem href = "contacts">Контакты |</NavItem>
+                            <NavItem href = "/">Главная </NavItem>
+                            <NavItem href = "about">О компании </NavItem>
+                            <NavItem href = "products">Продукты </NavItem>
+                            <NavItem href = "lease">Аренда </NavItem>
+                            <NavItem href = "services">Услуги </NavItem>
+                            <NavItem href = "support">Техподдержка </NavItem>
+                            <NavItem href = "news">Новости </NavItem>
+                            <NavItem href = "contacts">Контакты </NavItem>
                         </Nav>
                     </Navbar.Collapse>
                     <form className="navbar-form navbar-left" role="search">
