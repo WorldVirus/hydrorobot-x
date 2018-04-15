@@ -24,7 +24,7 @@
 /*.form-control {*/
     /*border-radius: 20px;*/
 /*}*/
-.form-control:hover {
+.navbar-form .form-control:hover {
     padding: 10px 3em;
 }
 .navbar-collapse  {
