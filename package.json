@@ -59,5 +59,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0"
+  },
+  "engines": {
+    "npm":"5.8.0"
   }
 }
