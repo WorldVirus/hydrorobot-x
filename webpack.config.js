@@ -21,7 +21,7 @@ var plugins = [
 
 if (process.env.NODE_ENV === 'production') {
     plugins.push(
-        new CleanWebpackPlugin([ 'build/assets' ], {
+        new CleanWebpackPlugin([ './src/build/assets' ], {
             root: __dirname,
             verbose: true,
             dry: false
