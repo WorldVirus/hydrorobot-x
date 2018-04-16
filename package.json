@@ -4,7 +4,7 @@
   "description": "ROV magazine",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack",
     "start": "npm run build && NODE_ENV=production node ./server.js"
   },
   "dependencies": {
