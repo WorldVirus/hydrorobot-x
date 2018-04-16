@@ -66,7 +66,7 @@ module.exports = {
         ]
     },
     devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
-    devServer: {
-        headers: { 'Access-Control-Allow-Origin': '*' }
-    }
+    // devServer: {
+    //     headers: { 'Access-Control-Allow-Origin': '*' }
+    // }
 };

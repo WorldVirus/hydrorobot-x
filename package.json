@@ -57,6 +57,6 @@
     "webpack-dev-server": "^1.15.0"
   },
   "engines": {
-    "npm":"5.8.0"
+    "npm": "5.8.0"
   }
 }
