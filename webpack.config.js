@@ -62,7 +62,15 @@ module.exports = {
             { test: /\.(woff|woff2|ttf|eot)/, loader: 'url-loader?limit=1' },
             { test: /\.jsx?$/,loader: process.env.NODE_ENV !== 'production' ? 'react-hot!babel': 'babel', exclude: [/node_modules/, /public/] },
             { test: /\.json$/, loader: 'json-loader' },
-            {test: /\.(ico)$/, loader: "static-loader"},
+            {test: /\.(ico)$/, loader: "static-loader"},{
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        attrs: [':data-src']
+                    }
+                }
+            }
         ]
     },
    // devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
