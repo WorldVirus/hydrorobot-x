@@ -21,7 +21,7 @@ var plugins = [
 
 if (process.env.NODE_ENV === 'production') {
     plugins.push(
-        new CleanWebpackPlugin([ './src/build/assets' ], {
+        new CleanWebpackPlugin([ './build/assets' ], {
             root: __dirname,
             verbose: true,
             dry: false
@@ -65,7 +65,7 @@ module.exports = {
             {test: /\.(ico)$/, loader: "static-loader"},
         ]
     },
-    devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
+   // devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
     // devServer: {
     //     headers: { 'Access-Control-Allow-Origin': '*' }
     // }

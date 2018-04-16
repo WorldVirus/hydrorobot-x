@@ -49,7 +49,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('*', function(request, response) {
-    response.sendFile(__dirname + '/build/index.html');
+    response.sendFile(__dirname + '/public/index.html');
 });
 
 const port = process.env.PORT || 8000;
