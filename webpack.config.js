@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
-    entry: ['babel-polyfill', './src/client.js'],
+    entry: ['babel-polyfill', './src/index.js'],
     debug: process.env.NODE_ENV !== 'production',
     resolve: {
         root:               path.join(__dirname, 'src'),
@@ -43,7 +43,7 @@ module.exports = {
     output: {
         path: `${__dirname}/build/assets`,
         filename: jsName,
-        publicPath
+    //    publicPath
     },
     module: {
         loaders: [

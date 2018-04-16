@@ -1,4 +1,4 @@
-import { browserHistory, Router,Route,IndexRoute, } from 'react-router';
+import {browserHistory, Router, Route, IndexRoute,} from 'react-router';
 import React from 'react';
 import ReactDOM from "react-dom"
 import Navv from 'components/navbar/Navbar.jsx'
@@ -13,27 +13,59 @@ import Robots from "components/robots/Robots"
 import News from "components/news/News"
 import Arenda from "components/arenda/Arenda"
 
-import { createStore, applyMiddleware, compose } from 'redux';
-import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
-import { Provider } from 'react-redux';
+import {createStore, applyMiddleware, compose} from 'redux';
+import {syncHistoryWithStore, routerMiddleware} from 'react-router-redux';
+import {Provider} from 'react-redux';
 
-ReactDOM.render((
-      <Router history={browserHistory}>
-<Route component = {MainLayout}>
-  <Route component = {Navv}>
-    <Route  component={HeadGoods} >
-     <Route path="/" component={Information} />
-    </Route>
-<Route path = "services"  component = {Lease}/>
-<Route path = "news"  component = {News}/>
-<Route path = "lease"  component = {Arenda}/>
+const Root = (props) => {
+    return (
+        < Router
+    history = {browserHistory} >
+        < Route
+    component = {MainLayout} >
+        < Route
+    component = {Navv} >
+        < Route
+    component = {HeadGoods} >
+        < Route
+    path = "/"
+    component = {Information}
+    />
+    < /Route>
+    < Route
+    path = "services"
+    component = {Lease}
+    />
+    < Route
+    path = "news"
+    component = {News}
+    />
+    < Route
+    path = "lease"
+    component = {Arenda}
+    />
 
-<Route path = "products"  component = {Robots}/>
-<Route path = "support"  component = {Support}/>
-<Route  path  = "about" component={About} />
-<Route  path  = "contacts" component={Contacts} />
+    < Route
+    path = "products"
+    component = {Robots}
+    />
+    < Route
+    path = "support"
+    component = {Support}
+    />
+    < Route
+    path = "about"
+    component = {About}
+    />
+    < Route
+    path = "contacts"
+    component = {Contacts}
+    />
 
-    </Route>
-  </Route>
-</Router>
- ),document.getElementById('react-view'));
+    < /Route>
+    < /Route>
+    < /Router>
+)
+    ;
+};
+export default Root;
