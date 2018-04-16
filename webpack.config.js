@@ -5,7 +5,7 @@ var path               = require('path');
 var ExtractTextPlugin  = require('extract-text-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 
-//var publicPath         = 'http://localhost:8050/build/assets';
+var publicPath         = 'http://localhost:8050/build/assets';
 var cssName            = process.env.NODE_ENV === 'production' ? 'styles-[hash].css' : 'styles.css';
 var jsName             = process.env.NODE_ENV === 'production' ? 'bundle-[hash].js' : 'bundle.js';
 
@@ -43,7 +43,7 @@ module.exports = {
     output: {
         path: `${__dirname}/build/assets`,
         filename: jsName,
-       // publicPath
+        publicPath
     },
     module: {
         loaders: [
@@ -66,7 +66,7 @@ module.exports = {
         ]
     },
     devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
-    // devServer: {
-    //     headers: { 'Access-Control-Allow-Origin': '*' }
-    // }
+    devServer: {
+        headers: { 'Access-Control-Allow-Origin': '*' }
+    }
 };
